@@ -204,4 +204,12 @@
         <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>khttp</name>
+            <url>https://maven.pkg.github.com/SoftwareAngelsDev/khttp</url>
+        </repository>
+    </distributionManagement>
 </project>

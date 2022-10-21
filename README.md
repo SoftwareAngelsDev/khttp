@@ -18,17 +18,20 @@ fun main(args: Array<out String>) {
     println(get("http://icanhazip.com").text)
 }
 ```
+## Deploy
+
+To deploy a new depencency, use `mvn deploy -Dmaven.test.skip`. The skip tests is being used since this project is no longer maintained.
 
 ## Dependency
 
-### Stable
+### Releases
 
-Stable releases are hosted on [JCenter](https://bintray.com/bintray/jcenter).
+The releases are available in this repository.
 
 ```xml
 <repository>
-  <id>jcenter</id>
-  <url>https://jcenter.bintray.com/</url>
+  <id>github</id>
+  <url>https://maven.pkg.github.com/SoftwareAngelsDev/khttp</url>
 </repository>
 <!-- ... -->
 <dependency>
@@ -37,8 +40,3 @@ Stable releases are hosted on [JCenter](https://bintray.com/bintray/jcenter).
   <version>1.0.0</version>
 </dependency>
 ```
-
-### Development
-
-Development builds are currently available through [JitPack](https://jitpack.io/#jkcclemens/khttp). Snapshot builds may
-eventually be hosted on [OJO](https://oss.jfrog.org/), but are not currently available there.
